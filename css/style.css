@@ -1,0 +1,71 @@
+@import "nav.css";
+@import "home.css";
+@import "gallery.css";
+@import "about.css";
+@import "contact.css";
+@import "footer.css";
+
+body, html {
+    min-height: 100vh;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+.page-heading {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url("../media/img-1.JPG") no-repeat fixed center;
+    height: 300px;
+    width: 100%;
+    padding-top: 130px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.page-heading h1, .page-heading h4 {
+    margin-left: -350px;
+    animation: slide-from-left 1.5s forwards ease;
+    animation-name: slide-from-left;
+}
+
+#about, #contact {
+    opacity: 0;
+    animation: fade-in 2.5s forwards ease;
+}
+
+/* Animations */
+@keyframes fade-in {
+    FROM { opacity: 0; }
+    TO { opacity: 1; }
+}
+
+@keyframes slide-from-left {
+    FROM { margin-left: -350px;}
+    TO { margin-left: 0;}
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: rgb(168, 168, 168);
+    height: 3px;
+}
+
+::-webkit-scrollbar-corner { 
+    display: none; 
+    height: 0px; 
+    width: 0px; 
+}
+
+
+

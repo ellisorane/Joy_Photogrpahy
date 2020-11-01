@@ -1,0 +1,26 @@
+footer {
+    height: 100px;
+    background-color: #ffff;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.fa {
+    color: rgb(83, 83, 83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    margin: 20px;
+    transition: all 0.5s;
+}
+
+.fa:hover {
+    text-decoration: none;
+    color: black;
+}

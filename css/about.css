@@ -1,0 +1,40 @@
+#about {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-heading-name {
+    font-weight: bold;
+}
+
+.about-logo {
+    height: 100px;
+}
+
+.photo {
+    height: 400px;
+}
+
+#about p, .btn {
+    letter-spacing: 0.2em;
+}
+
+#about a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media (min-width:1000px) {
+    .about-row {
+        min-height: fit-content;
+        background-color: rgb(24, 24, 24);
+        margin-top: 100px;
+        margin-bottom: 100px;
+        padding: 100px;
+        border-radius: 5px;
+    }
+}
